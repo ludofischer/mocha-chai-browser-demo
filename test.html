@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="mocha.css" />
+  <style>
+     #fixture {
+      position: absolute;
+      top: -9999;
+      left: -9999;
+     };
+  </style>  
+  <script src="jquery-1.7.2.js"></script>
+  <script src="chai.js"></script>
+  <script src="mocha.js"></script>
+  <script> mocha.setup('bdd');</script>
+  <script src="utils.js"></script>
+  <script src="tests.js"></script>
+  <script>
+    window.onload = function() {
+         mocha.run()
+    };
+  </script>
+ </head>
+<body>
+  <div id="mocha"></div>
+  <div id="fixture">
+    <form id="testForm">
+      <select id="testSelect">
+	<option>
+	  Hello
+	</option>
+	</select>
+	<input type="hidden" name="contest.question1" value="some bad question"/> 
+	<input type="text" id="contestInput" name="contest.answer1"/>
+	<input type="hidden" name="contest.question2" value="some bad question"/> 
+	<select name="contest.answer2">
+	  <option>Good</option>
+	  <option id="contestOption">Great</option>
+	</select>
+	<input type="hidden" name="contest.question3" value="some bad question"/> 
+	<input type="text" id="badQuizAnswer" name="contest.answer3"/>
+    </form>
+  </div>
+</body>
+</html>
