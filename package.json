@@ -17,6 +17,7 @@
   "homepage": "https://github.com/ludovicofischer/mocha-chai-browser-demo",
   "devDependencies": {
     "karma-cli": "0.0.4",
-    "karma-mocha": "^0.1.10"
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^0.3.1"
   }
 }
